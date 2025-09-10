@@ -8,6 +8,12 @@
             height: 200px;
             background-color: goldenrod;
         }
+        #div2 {
+            width: 200px;
+            height: 200px;
+            background-color: goldenrod;
+            border-radius: 50%;
+        }
 
         /* add CSS code here */
 
@@ -24,8 +30,22 @@
     <button onclick="changeShape()">Make a change!</button>
 
     <script>
-        
-       // add code here
+        var square = true;
+        function changeShape(){
+
+           
+            if(square){
+                var div = document.getElementById("div1");
+                div.id = 'div2';
+                square = false;
+            }else{
+                var div = document.getElementById("div2");
+                div.id = 'div1';
+                square = true;
+
+            }
+        }
+               // add code here
 
     </script>
 
